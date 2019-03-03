@@ -2,8 +2,7 @@ const { success, notFound } = require('../../services/response/')
 const Classroom = require('../models/classroom')
 const ObjectId = require('mongoose').Types.ObjectId;
 
-//TO DO
-//usuwanie rezerwacji
+
 
 const createReservation = async (req, res, next) => {
     const {id} = req.params
@@ -43,7 +42,6 @@ const createReservation = async (req, res, next) => {
 
 const indexReservation = (req, res, next) => {
     Classroom.findById(req.params.id)
-        //.populate('reservations.lector', 'reservations.group','number')
         .then(notFound(res))
         .then((classroom) => classroom ? classroom.reservations.map(r =>{
             console.log(classroom);

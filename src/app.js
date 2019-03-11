@@ -25,7 +25,7 @@ app.use('/user', userRoutes)
 
 
 
-setImmediate(() => {
+setImmediate(() => {    //setImmediate call function as soon as possible
     server.listen(port, ip, () => {
         if(env === 'development') console.log('Express server listening on http://%s:%d, in %s mode', ip, port, env)
     })

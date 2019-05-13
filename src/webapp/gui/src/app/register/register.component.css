@@ -1,6 +1,6 @@
 .note
 {
-  width: 1000px;
+  width: 800px;
   text-align: center;
   height: 80px;
   background: -webkit-linear-gradient(left, #0072ff, #8811c5);
@@ -13,7 +13,7 @@
 .form-content
 {
   margin: 0 auto;
-  width: 1000px;
+  width: 800px;
   display: inline-block;
   padding: 20%;
   border: 1px solid #ced4da;

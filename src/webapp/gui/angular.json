@@ -133,5 +133,10 @@
       }
     }
   },
-  "defaultProject": "gui"
+  "defaultProject": "gui",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

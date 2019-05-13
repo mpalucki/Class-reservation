@@ -7,15 +7,17 @@ html {
 
 .plane {
   margin: 20px auto;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .cockpit {
   height: 250px;
   margin-left: inherit;
   position: relative;
+  left: 203px;
+  width: 250px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   border-bottom: 5px solid #d8d8d8;
 &:before {
    content: "";
@@ -76,6 +78,8 @@ ol {
 }
 
 .seats {
+  position: relative;
+  left: 220px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -84,6 +88,9 @@ ol {
 
 .seat {
   display: flex;
+  height: 50px;
+  width: 40px;
+  flex-basis: 0;
   flex: 0 0 14.28571428571429%;
   padding: 5px;
   position: relative;

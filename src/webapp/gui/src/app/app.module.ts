@@ -8,8 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ReservationsComponent } from './reservations/reservations.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule, ReactiveFormsModule} from "@angular/forms";
+import {ClassroomService} from "./services/classroom.service";
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ClassroomService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

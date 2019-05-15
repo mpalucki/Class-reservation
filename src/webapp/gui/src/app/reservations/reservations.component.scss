@@ -97,11 +97,11 @@ ol {
 &:nth-child(3) {
    margin-right: 14.28571428571429%;
  }
-input[type=checkbox] {
+input[type=radio] {
   position: absolute;
   opacity: 0;
 }
-input[type=checkbox]:checked {
+input[type=radio]:checked {
 + label {
   background: #bada55;
   -webkit-animation-name: rubberBand;
@@ -110,7 +110,7 @@ input[type=checkbox]:checked {
   animation-fill-mode: both;
 }
 }
-input[type=checkbox]:disabled {
+input[type=radio]:disabled {
 + label {
   background: #dddddd;
   text-indent: -9999px;
@@ -240,3 +240,15 @@ label {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
 }
+
+.butter
+{
+  display: inline-block;
+  position: absolute;
+  float: right;
+  text-align: right;
+  top: 60px;
+  left: 70px;
+}
+
+

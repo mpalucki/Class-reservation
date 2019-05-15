@@ -8,20 +8,23 @@
   font-weight: bold;
   font-size: 50px;
   line-height: 80px;
-
 }
+
 .form-content
 {
-  margin: 0 auto;
+
   width: 800px;
   display: inline-block;
   padding: 20%;
   border: 1px solid #ced4da;
   margin-bottom: 2%;
+
+
 }
 .form-control{
   border-radius:1.5rem;
 }
+
 .btnSubmit
 {
   border:none;
